@@ -1,1 +1,39 @@
-PROJETO DE UM SCANNER DE PORTAS AVANÇADO PORTIFÓLIO
+# Port Scanner Pro
+
+Scanner de portas TCP com suporte a multithreading e banner grabbing, 
+desenvolvido em Python como parte de estudos em cibersegurança.
+
+# Funcionalidades
+
+- Escaneamento de portas TCP em uma faixa customizável
+- Execução paralela via multithreading (alto desempenho)
+- Banner grabbing (identificação de serviços em portas abertas)
+- Exportação de resultados em formato JSON
+
+# Como usar
+
+bash
+python3 scanner.py -t <alvo> -p <faixa-de-portas>
+
+
+# Exemplo
+
+bash
+python3 scanner.py -t 192.168.1.10 -p 1-1000
+
+# Parâmetros
+
+| Parâmetro        | Descrição                    | Obrigatório  | Padrão |
+|------------------|------------------------------|--------------|--------|
+| `-t`, `--target` | IP ou hostname do alvo       | Sim          | -      |
+| `-p`, `--ports`  | Faixa de portas (ex: 1-1000) | Não          | 1-1000 |
+
+# Requisitos
+
+- Python 3.x
+- Nenhuma biblioteca externa (usa apenas módulos padrão)
+
+
+# Autor
+
+Desenvolvido por Gustavo como parte de estudos em cibersegurança.
